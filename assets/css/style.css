@@ -1,0 +1,116 @@
+/* =========================
+   HOME OPTIONS
+========================= */
+
+.home-options {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.option-card {
+    display: block;
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 35px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.option-card h2 {
+    margin: 0 0 15px;
+    font-size: 32px;
+}
+
+.option-card p {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+/* =========================
+   PROPERTY / ROOM IMAGES
+========================= */
+
+.property-card,
+.room-card {
+    width: 300px;
+}
+
+.property-card img,
+.room-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transition: 0.3s;
+}
+
+.property-card img:hover,
+.room-card img:hover {
+    transform: scale(1.03);
+}
+
+.property-card p,
+.room-card p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .home-options {
+        grid-template-columns: 1fr;
+    }
+
+    .property-card,
+    .room-card {
+        width: 100%;
+    }
+
+    .property-card img,
+    .room-card img {
+        width: 100%;
+        height: auto;
+    }
+
+}.room-placeholder {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #18294d, #4266b2);
+}
+
+.room-placeholder span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: .8;
+}
+
+.room-placeholder strong {
+    font-size: 25px;
+}

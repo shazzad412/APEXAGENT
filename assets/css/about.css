@@ -1,0 +1,8 @@
+.about-section {
+    background: #ffffff !important;
+    padding: 30px;
+    border-radius: 8px;
+    color: #000;
+    position: relative;
+    z-index: 10;
+}
